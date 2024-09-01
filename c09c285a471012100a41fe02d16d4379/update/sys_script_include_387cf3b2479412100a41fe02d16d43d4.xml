@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_295853_nowpro.Script_Include_Aula04</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Script_Include_Aula04</name>
+        <script><![CDATA[var Script_Include_Aula04 = Class.create();
+Script_Include_Aula04.prototype = {
+    initialize: function() {},
+
+    getProblems: function() {
+        var getProblems = new GlideAggregate("problem");
+        getProblems.addAggregate("count", "state");
+        getProblems.query();
+        while (getProblems.next()) {
+            gs.info(getProblems.getDisplayValue("state") + ": " + getProblems.getAggregate("count", "state"));
+        }
+    },
+
+    type: 'Script_Include_Aula04'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-01 18:21:56</sys_created_on>
+        <sys_id>387cf3b2479412100a41fe02d16d43d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Script_Include_Aula04</sys_name>
+        <sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope>
+        <sys_update_name>sys_script_include_387cf3b2479412100a41fe02d16d43d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-01 18:21:56</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Request HR Access">4826f5da475412100a41fe02d16d43b7</catalog_item>
+        <catalog_variable>IO:e7a675da475412100a41fe02d16d4386</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-30 19:31:13</sys_created_on>
+        <sys_id>2a59bdde475412100a41fe02d16d43f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>id_number</sys_name>
+        <sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_2a59bdde475412100a41fe02d16d43f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-30 19:31:13</sys_updated_on>
+        <table/>
+        <ui_policy display_value="if Requested for is not empty">8219fd9e475412100a41fe02d16d4387</ui_policy>
+        <variable>id_number</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NowPro">c09c285a471012100a41fe02d16d4379</application>
+        <file_path/>
+        <instance_id>39118d531ba23514ba5ceb9b2d4bcbc6</instance_id>
+        <instance_name>dev220235</instance_name>
+        <name>catalog_ui_policy_action_2a59bdde475412100a41fe02d16d43f4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Request HR Access">4826f5da475412100a41fe02d16d43b7</catalog_item><catalog_variable>IO:e7a675da475412100a41fe02d16d4386</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>true</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-30 19:31:13</sys_created_on><sys_id>2a59bdde475412100a41fe02d16d43f4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>id_number</sys_name><sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package><sys_policy/><sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope><sys_update_name>catalog_ui_policy_action_2a59bdde475412100a41fe02d16d43f4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-30 19:31:13</sys_updated_on><table/><ui_policy display_value="if Requested for is not empty">8219fd9e475412100a41fe02d16d4387</ui_policy><variable>id_number</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1503921651</payload_hash>
+        <record_name>id_number</record_name>
+        <reverted_from/>
+        <source>4894b092475012100a41fe02d16d431f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-30 19:31:14</sys_created_on>
+        <sys_id>8569bdde475412100a41fe02d16d43b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191a4c5383a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-30 19:31:14</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>c969bdde37541210d7c1704a19b930b5</update_guid>
+        <update_guid_history>c969bdde37541210d7c1704a19b930b5:1503921651</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="id_number">722f3d96479412100a41fe02d16d4396</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-30 19:56:28</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>2506f29449154e0d87d965cdc281c489</sys_id>
+        <sys_metadata>2a59bdde475412100a41fe02d16d43f4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>id_number</sys_name>
+        <sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope>
+        <sys_scope_delete display_value="">324a5ab15a3f4b43a349adb702417b79</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_2a59bdde475412100a41fe02d16d43f4</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_2a59bdde475412100a41fe02d16d43f4">8569bdde475412100a41fe02d16d43b6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-30 19:56:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

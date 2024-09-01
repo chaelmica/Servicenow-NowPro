@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Request Password Reset">97fb495e479012100a41fe02d16d4336</catalog_item>
+        <catalog_variable>IO:0e7d419e479012100a41fe02d16d4332</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>300</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-30 19:11:27</sys_created_on>
+        <sys_id>68d4fd5a475412100a41fe02d16d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>active</sys_name>
+        <sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_68d4fd5a475412100a41fe02d16d436f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-30 19:11:27</sys_updated_on>
+        <table/>
+        <ui_policy display_value="If Federated user is &quot;No&quot;">b2b4f9d6475412100a41fe02d16d4370</ui_policy>
+        <variable>active</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>
