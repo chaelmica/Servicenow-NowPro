@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_295853_nowpro.Script_Include_Aula05</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Script_Include_Aula05</name>
+        <script><![CDATA[var Script_Include_Aula05 = Class.create();
+Script_Include_Aula05.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getProblemDetails:  function(){
+		var prbNumber = this.getParameter('sysparm_number');
+		//gs.info('PRB Number: ' + prbNumber); //test
+
+		var getPrbDetails = new GlideRecord('problem');
+		getPrbDetails.addQuery('number', prbNumber);
+		getPrbDetails.query();
+
+		while (getPrbDetails.next()){
+			var prbDetails = '{"number":"' + getPrbDetails.getValue('number') + '", "category": "' + getPrbDetails.getDisplayValue('category') + '", "impact": "' + getPrbDetails.getDisplayValue('impact') + '", "urgency": "' + getPrbDetails.getDisplayValue('urgency') + '", "priority":"' + getPrbDetails.getDisplayValue('priority') + '", "short_description":"' + getPrbDetails.getValue('short_description') + '", "description":"' + getPrbDetails.getValue('description') + '"}';
+
+			gs.info('Json result: '+ prbDetails); //test
+
+			return prbDetails;
+		}
+	},
+
+    getIncidentDetails: function() {
+        var incNumber = this.getParameter('sysparm_number');
+        var getIncDetails = new GlideRecord('incident');
+        getIncDetails.addQuery('number', incNumber);
+        getIncDetails.query();
+
+        //gs.info("Incidente: " + incNumber);
+
+        if (getIncDetails.next()) {
+
+            var incDetails = '{"number": "' + getIncDetails.getValue("number") + '", "status": "' + getIncDetails.getDisplayValue("state") + '", "short_description": "' + getIncDetails.getValue('short_description') + '", "description": "' + getIncDetails.getValue('description') + '"}';
+
+            //gs.info(incDetails);
+
+            return incDetails;
+        }
+    },
+
+    type: 'Script_Include_Aula05'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-01 20:25:41</sys_created_on>
+        <sys_id>13d818c3471812100a41fe02d16d43f6</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Script_Include_Aula05</sys_name>
+        <sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope>
+        <sys_update_name>sys_script_include_13d818c3471812100a41fe02d16d43f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-02 14:40:09</sys_updated_on>
+    </sys_script_include>
+</record_update>
