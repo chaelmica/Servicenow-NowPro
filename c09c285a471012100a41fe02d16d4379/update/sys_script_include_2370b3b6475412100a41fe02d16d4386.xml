@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_295853_nowpro.Script_Include_Aula03</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Script_Include_Aula03</name>
+        <script><![CDATA[var Script_Include_Aula03 = Class.create();
+Script_Include_Aula03.prototype = {
+    initialize: function() {},
+
+    _Script_Include: function() {
+        gs.info("Olá Script Include!");
+    },
+
+    getUsers: function() {
+        var getInactiveusers = new GlideRecord("sys_user");
+        getInactiveusers.addQuery("active", "false");
+        getInactiveusers.query();
+        while (getInactiveusers.next()) {
+            gs.info(getInactiveusers.sys_id);
+        }
+    },
+
+    updateUsers: function() {
+        var updateUsers = new GlideRecord("sys_user");
+        updateUsers.addQuery("active", "false");
+        updateUsers.query();
+        while (updateUsers.next()) {
+            updateUsers.setValue("active", true);
+            updateUsers.setValue("locked_out", true);
+            updateUsers.update();
+        }
+    },
+
+    getIncidents: function() {
+        var getIncidents = new GlideRecord("incident");
+        getIncidents.addEncodedQuery("active=true^opened_atONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()");
+        getIncidents.setLimit(10);
+        getIncidents.query();
+        while (getIncidents.next()) {
+            gs.info("Number: " + getIncidents.number + ", Short description: " + getIncidents.short_description + ", Opened by: " + getIncidents.getDisplayValue("opened_by") + ", Status: " + getIncidents.state + ", Priority: " + getIncidents.priority)
+        }
+
+    },
+
+    type: 'Script_Include_Aula03'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-01 17:30:25</sys_created_on>
+        <sys_id>2370b3b6475412100a41fe02d16d4386</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Script_Include_Aula03</sys_name>
+        <sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope>
+        <sys_update_name>sys_script_include_2370b3b6475412100a41fe02d16d4386</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-01 18:00:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

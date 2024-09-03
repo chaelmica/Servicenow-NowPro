@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="DELETE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>requester_data</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>100</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-30 14:37:47</sys_created_on>
+        <sys_id>08367cd2475012100a41fe02d16d4362</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Requester data</sys_name>
+        <sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope>
+        <sys_update_name>item_option_new_set_08367cd2475012100a41fe02d16d4362</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-08-30 15:21:14</sys_updated_on>
+        <title>Requester data</title>
+        <type>one_to_many</type>
+        <version>6</version>
+        <write_roles/>
+    </item_option_new_set>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NowPro">c09c285a471012100a41fe02d16d4379</application>
+        <file_path/>
+        <instance_id>39118d531ba23514ba5ceb9b2d4bcbc6</instance_id>
+        <instance_name>dev220235</instance_name>
+        <name>item_option_new_set_08367cd2475012100a41fe02d16d4362</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set"><item_option_new_set action="INSERT_OR_UPDATE"><create_roles/><description/><display_title>false</display_title><internal_name>requester_data</internal_name><layout>normal</layout><name/><order>100</order><read_roles/><set_attributes/><sys_class_name>item_option_new_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-30 14:37:47</sys_created_on><sys_id>08367cd2475012100a41fe02d16d4362</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Requester data</sys_name><sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package><sys_policy/><sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope><sys_update_name>item_option_new_set_08367cd2475012100a41fe02d16d4362</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2024-08-30 15:21:14</sys_updated_on><title>Requester data</title><type>one_to_many</type><version>6</version><write_roles/></item_option_new_set></record_update>]]></payload>
+        <payload_hash>1660438499</payload_hash>
+        <record_name>Requester data</record_name>
+        <reverted_from/>
+        <source>4894b092475012100a41fe02d16d431f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-08-30 15:21:14</sys_created_on>
+        <sys_id>47204dde475012100a41fe02d16d4315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191a3e0598f0000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-08-30 15:21:14</sys_updated_on>
+        <type>Variable Set</type>
+        <update_guid>cb204dde4f50121070aeb7fff5b25314</update_guid>
+        <update_guid_history>cb204dde4f50121070aeb7fff5b25314:1660438499,774c70daa65012100fdee2cb8f25f950:1869136802,010cbc9ad0501210c0ced10441150ee9:2077835105,a7ebfc16bf50121062c542c2a1338283:-2008433888,703afc1ab5501210325ec7c815d505bb:-1799735585,9e46f416bb501210eaa93698672742a1:-1591037282,2a36f8d2e750121003d79afd64cdd198:1079208186</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Requester data">7b700512479012100a41fe02d16d43ac</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-30 15:22:39</sys_created_on>
+        <sys_db_object display_value="" name="item_option_new_set">item_option_new_set</sys_db_object>
+        <sys_id>4f5964d3f14c488091bd80b10d170400</sys_id>
+        <sys_metadata>08367cd2475012100a41fe02d16d4362</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requester data</sys_name>
+        <sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope>
+        <sys_scope_delete display_value="">324a5ab15a3f4b43a349adb702417b79</sys_scope_delete>
+        <sys_update_name>item_option_new_set_08367cd2475012100a41fe02d16d4362</sys_update_name>
+        <sys_update_version display_value="item_option_new_set_08367cd2475012100a41fe02d16d4362">47204dde475012100a41fe02d16d4315</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-30 15:22:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

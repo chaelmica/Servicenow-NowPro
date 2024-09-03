@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_295853_nowpro.Script_Include_Aula05</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Script_Include_Aula05</name>
+        <script><![CDATA[var Script_Include_Aula05 = Class.create();
+Script_Include_Aula05.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getIncidentDetails: function() {
+        var incNumber = this.getParameter('sysparm_number');
+        gs.info("Incidente: " + incNumber);
+        var getIncDetails = new GlideRecord('incident');
+        getIncDetails.addQuery('number', incNumber);
+        getIncDetails.query();
+
+        if (getIncDetails.next()) {
+            var incDetails = '{"status": "' + getIncDetails.getDisplayValue("state") + '", "short_description": "' + getIncDetails.getValue('short_description') + '", "description": "' + getIncDetails.getValue('description') + '"}';
+            gs.info(incDetails);
+            gs.info(incDetails.status);
+
+            return incDetails;
+        }
+    },
+
+    type: 'Script_Include_Aula05'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-01 19:32:45</sys_created_on>
+        <sys_id>d0bc0c0747d412100a41fe02d16d43f0</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Script_Include_Aula05</sys_name>
+        <sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope>
+        <sys_update_name>sys_script_include_d0bc0c0747d412100a41fe02d16d43f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-01 20:20:27</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NowPro">c09c285a471012100a41fe02d16d4379</application>
+        <file_path/>
+        <instance_id>39118d531ba23514ba5ceb9b2d4bcbc6</instance_id>
+        <instance_name>dev220235</instance_name>
+        <name>sys_script_include_d0bc0c0747d412100a41fe02d16d43f0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_295853_nowpro.Script_Include_Aula05&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;Script_Include_Aula05&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var Script_Include_Aula05 = Class.create();
+Script_Include_Aula05.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getIncidentDetails: function() {
+        var incNumber = this.getParameter('sysparm_number');
+        gs.info("Incidente: " + incNumber);
+        var getIncDetails = new GlideRecord('incident');
+        getIncDetails.addQuery('number', incNumber);
+        getIncDetails.query();
+
+        if (getIncDetails.next()) {
+            var incDetails = '{"status": "' + getIncDetails.getDisplayValue("state") + '", "short_description": "' + getIncDetails.getValue('short_description') + '", "description": "' + getIncDetails.getValue('description') + '"}';
+            gs.info(incDetails);
+            gs.info(incDetails.status);
+
+            return incDetails;
+        }
+    },
+
+    type: 'Script_Include_Aula05'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-01 19:32:45&lt;/sys_created_on&gt;&lt;sys_id&gt;d0bc0c0747d412100a41fe02d16d43f0&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Script_Include_Aula05&lt;/sys_name&gt;&lt;sys_package display_value="NowPro" source="x_295853_nowpro"&gt;c09c285a471012100a41fe02d16d4379&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="NowPro"&gt;c09c285a471012100a41fe02d16d4379&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_d0bc0c0747d412100a41fe02d16d43f0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-01 20:20:27&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2090933981</payload_hash>
+        <record_name>Script_Include_Aula05</record_name>
+        <reverted_from/>
+        <source>fe6e3ff2479412100a41fe02d16d43a5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-01 20:20:27</sys_created_on>
+        <sys_id>f5d79803471812100a41fe02d16d43d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191af3f02530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-01 20:20:27</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>bdd798031a181210371905e39075fed0</update_guid>
+        <update_guid_history>bdd798031a181210371905e39075fed0:-2090933981,a4a618cfdbd4121028b23c1e7c6de178:993070553,9e3610cb5bd41210651c4dc181f9f198:2098615185,5ea5d4cff9d41210f0ad482460e99900:1066347007,7e2554cfbdd412109a8067bab2a30ff5:1356317017,12e450cf69d412108574406c23a0b4ba:1846376016,4584988f3dd412107fe2a5ddc4ddba59:1166977226,5624144754d412105c5b8465138e9e34:330290601,ab0d40877ed412104d2e001dcb8b4455:-1375425630,c7ecc0478ed41210d3ccdfc217d65af7:179903007</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-01 20:24:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>44730096925f4821a24caf97fc906731</sys_id>
+        <sys_metadata>d0bc0c0747d412100a41fe02d16d43f0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Script_Include_Aula05</sys_name>
+        <sys_package display_value="NowPro" source="x_295853_nowpro">c09c285a471012100a41fe02d16d4379</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NowPro">c09c285a471012100a41fe02d16d4379</sys_scope>
+        <sys_scope_delete display_value="">324a5ab15a3f4b43a349adb702417b79</sys_scope_delete>
+        <sys_update_name>sys_script_include_d0bc0c0747d412100a41fe02d16d43f0</sys_update_name>
+        <sys_update_version display_value="sys_script_include_d0bc0c0747d412100a41fe02d16d43f0">f5d79803471812100a41fe02d16d43d1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-01 20:24:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
